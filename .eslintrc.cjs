@@ -23,6 +23,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
     quotes: "off",
     "@typescript-eslint/quotes": "off",
     semi: "off",
@@ -30,5 +31,6 @@ module.exports = {
     "no-extra-semicolons": "off",
     "space-before-function-paren": "off",
     "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/member-delimiter-style": "off",
   },
 };
