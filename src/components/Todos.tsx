@@ -1,16 +1,10 @@
-interface Todo {
-  id: string;
-  title: string;
-  completed: boolean;
-}
-
-type ListOfTodos = Todo[];
+import { type ListOfTodos } from "../types";
 
 interface Props {
   todos: ListOfTodos;
 }
 
-const Todos: React.FC<Props> = ({ todos }) => {
+export const Todos: React.FC<Props> = ({ todos }) => {
   return (
     <ul>
       {todos.map((todo) => {
@@ -19,5 +13,3 @@ const Todos: React.FC<Props> = ({ todos }) => {
     </ul>
   );
 };
-
-export default Todos;
