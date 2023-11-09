@@ -32,5 +32,7 @@ module.exports = {
     "space-before-function-paren": "off",
     "@typescript-eslint/space-before-function-paren": "off",
     "@typescript-eslint/member-delimiter-style": "off",
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": "off",
   },
 };
