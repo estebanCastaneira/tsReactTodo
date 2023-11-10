@@ -29,12 +29,15 @@ const App = (): JSX.Element => {
     setTodos(newTodos);
   };
   return (
-    <div className="todoapp">
-      <Todos
-        todos={todos}
-        onRemoveTodo={handleRemove}
-        onToggleCompleteTodo={hanldeCompleted}
-      />
+    <div>
+      <h1>Todolist whith React & TS</h1>
+      <div className="todoapp">
+        <Todos
+          todos={todos}
+          onRemoveTodo={handleRemove}
+          onToggleCompleteTodo={hanldeCompleted}
+        />
+      </div>
     </div>
   );
 };
