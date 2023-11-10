@@ -1,11 +1,11 @@
-import { type FilterValue, type TodoId } from "../types";
+import { type FilterValue } from "../types";
 import { Filters } from "./Filters";
 interface Props {
   activeCount: number;
   completedCount: number;
   filterSelected: FilterValue;
   handleFilterChange: (filter: FilterValue) => void;
-  onClearCompleted: ({ id }: TodoId) => void;
+  onClearCompleted: () => void;
 }
 
 export const Footer: React.FC<Props> = ({
@@ -25,6 +25,11 @@ export const Footer: React.FC<Props> = ({
         filterSelected={filterSelected}
         onFilterChange={handleFilterChange}
       />
+      {completedCount > 0 && (
+        <button className="clear-completed" onClick={onClearCompleted}>
+          Erase Completed
+        </button>
+      )}
     </footer>
   );
 };
