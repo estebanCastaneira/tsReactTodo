@@ -11,9 +11,9 @@ import {
 import { TODO_FILTERS } from "./consts";
 
 const mockTodos = [
-  { id: "1", title: "Ver el Twitch de Midu", completed: true },
+  { id: "1", title: "Ver la Champions", completed: true },
   { id: "2", title: "Aprender React con TS", completed: false },
-  { id: "3", title: "Sacar Ticket de la Midufest", completed: false },
+  { id: "3", title: "Sacar Ticket para Luis Miguel", completed: false },
 ];
 
 const App = (): JSX.Element => {
