@@ -27,7 +27,7 @@ export const Footer: React.FC<Props> = ({
       />
       {completedCount > 0 && (
         <button className="clear-completed" onClick={onClearCompleted}>
-          Erase Completed
+          ERASE COMPLETED
         </button>
       )}
     </footer>
